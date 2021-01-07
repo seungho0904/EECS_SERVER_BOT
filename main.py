@@ -37,5 +37,4 @@ async def on_ready():
     print(client.user.id)
     print('------')
 
-TOKEN = os.environ=("Bot_TOKEN")
-client.run(TOKEN)
+client.run("TOKEN")
