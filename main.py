@@ -18,17 +18,6 @@ async def on_message(message):
   if message.content.startswith('!hello'):
         await message.channel.send('hello')
   
-  if message.content.startswith('!help'):
-
-	  embed = discord.Embed(
-		  colour = discord.Colour.blue()
-	  )
-	
-	  embed.set_author(name='Help')
-	  embed.add_field(name='!Server', value='showing EECS server status' , inline = False)
-	
-  	await message.channel.send('Help', embed=embed)
-
   if message.content.startswith('!server'): 
     trs = table.find_all('tr')
     await message.channel.send('Server                             Load Average')
